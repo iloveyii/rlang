@@ -6,7 +6,7 @@
 
 - Run docker: `docker-compose up -d`
 - SSH to container to run R console: `docker exec -ti dat246_rlang /bin/bash`
-- Run R statement from cmdline: `Rscript -e 'Sys.setenv(DOWNLOAD_STATIC_LIBV8 = 1); install.packages("rstan");'`
+- Run R statement from cmdline: `Rscript -e 'sessionInfo()'`
 - Run R script from cmd line (inside directory scripts/): `Rscript first.r`
   - Hint: copy src/first.r and src/second.r to directory scripts/
 - Run R console: `R`
