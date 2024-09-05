@@ -1,0 +1,18 @@
+# version: "3.1"
+
+services:
+  dat246_rlang:
+    build: .
+    container_name: dat246_rlang
+    restart: always
+    ports:
+      - 5015:5015
+    volumes:
+      - ./scripts:/app/scripts:rw
+    environment:
+      TZ: "Europe/Stockholm"
+    command: tail -F /dev/null
+    networks:
+      - dat246_rlang_network
+networks:
+  dat246_rlang_network:
