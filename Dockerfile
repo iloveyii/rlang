@@ -1,5 +1,7 @@
 FROM r-base:latest
 
+WORKDIR /app/scripts
+
 RUN apt update 
 RUN apt install software-properties-common -y 
 RUN apt install gpg-agent -y 
