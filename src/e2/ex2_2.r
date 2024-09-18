@@ -7,12 +7,12 @@ str(d3)
 xbar <- mean( d3$weight )
 m <- quap(
 alist(
-height ~ dnorm( mu , sigma ) ,
-mu <- a + b*( weight - xbar ) ,
-a ~ dnorm( 178 , 20 ),
-b ~ dnorm( 0 , 10 ) ,
-sigma ~ dunif( 0 , 50 )
-) , data=d3 )
+  height ~ dnorm( mu , sigma ) ,
+  mu <- a + b*( weight - xbar ) ,
+  a ~ dnorm( 178 , 20 ),
+  b ~ dnorm( 0 , 10 ) ,
+  sigma ~ dunif( 0 , 50 )
+  ) , data=d3 )
 precis(m)
 
 post <- extract.samples( m )
@@ -40,3 +40,4 @@ lines( w.seq , pred.ci[1,] , lty=2 )
 lines( w.seq , pred.ci[2,] , lty=2 )
 
 dev.off()
+
