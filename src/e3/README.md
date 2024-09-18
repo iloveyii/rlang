@@ -2,6 +2,8 @@
 
 - Entropies
 - <https://github.com/rmcelreath/stat_rethinking_2020/tree/main/homework>
+- Week 04
+- The pdf files are in the exercises directory
 
 ## Run
 
