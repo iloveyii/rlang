@@ -1,5 +1,6 @@
 library(rethinking)
 
+# Book page # 181 - search for m6.9 in the book pdf
 d <- sim_happiness( seed=1977 , N_years=1000 )
 precis(d)
 
