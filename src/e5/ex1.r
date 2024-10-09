@@ -43,12 +43,20 @@ dat_list$disc <- as.integer( d$discipline ) # Assign category to the string valu
 
 dat_list
 
-# m1_direct <- ulam(
-#   alist(
-#     awards ~ binomial( apps , p ),
-#     logit(p) <- a[gid] + d[disc],
-#     a[gid] ~ normal (-1,1),
-#     d[disc] ~ normal (0 ,1) ),
-#     data= dat_list , chains =4 , cores =4 , cmdstan=TRUE )
+m1_direct <- ulam(
+  alist(
+    awards ~ binomial( apps , p ),
+    logit(p) <- a[gid] + d[disc],
+    a[gid] ~ normal (-1,1),
+    d[disc] ~ normal (0 ,1) ),
+    data= dat_list , chains =4 , cores =4 , cmdstan=TRUE )
   
-# precis(m1_direct ,2)
+precis(m1_direct ,2)
+
+#  On the relative scale:
+post <- extract.samples( m1_direct )
+diff_a <- post$a [,1] - post$a [,2]
+precis( list( diff_a=diff_a ) )
+
+# Interpretation
+postcheck(m1_direct)

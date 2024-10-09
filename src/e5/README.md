@@ -1,6 +1,7 @@
 # Exercise 5
 
 - Gender and awards
+- What are the total and indirect causal effects of gender on grant awards?
 - The pdf files are in the exercises directory
 
 ## Run
