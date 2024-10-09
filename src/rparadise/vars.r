@@ -19,7 +19,8 @@ ls(pat = "n")
 innerArea <- 23.5
 print("starts from i")
 ls(pat = "^i")
-
+# show some info about vars in memory
+ls.str()
 
 # check type of var
 print(typeof(n))
