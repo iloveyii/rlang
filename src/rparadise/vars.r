@@ -1,7 +1,7 @@
-n <- 10
-str(n)
+int <- 10
+str(int)
 
-n <- n + 2
+n <- int + 2
 print(n)
 
 # rnorm(10, mean = 10, sd = 2)
@@ -10,3 +10,6 @@ print(n)
 # set seed to get same vector
 set.seed(10)
 rnorm(8, 5, 2)
+
+# ls() is use to show the names of vars in memory
+ls()
