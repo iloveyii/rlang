@@ -26,5 +26,6 @@ ls.str()
 print(typeof(n))
 print(typeof(d))
 
-str(d)
-d
+# Data frame - like a matrix
+M <- data.frame(n, int, d)
+ls.str(pat = "M")
