@@ -9,7 +9,21 @@ print(n)
 # variance is the square root of the average of the summation of deviations from mew and is 2
 # set seed to get same vector
 set.seed(10)
-rnorm(8, 5, 2)
+d <- rnorm(8, 5, 2)
 
 # ls() is use to show the names of vars in memory
 ls()
+# show vars that contain m
+ls(pat = "n")
+# show vars starting from i
+innerArea <- 23.5
+print("starts from i")
+ls(pat = "^i")
+
+
+# check type of var
+print(typeof(n))
+print(typeof(d))
+
+str(d)
+d
