@@ -1,0 +1,12 @@
+n <- 10
+str(n)
+
+n <- n + 2
+print(n)
+
+# rnorm(10, mean = 10, sd = 2)
+# Standard deviation sigma : let pop is 2 4 4 4 5 5 7 9, then mew mean is 5
+# variance is the square root of the average of the summation of deviations from mew and is 2
+# set seed to get same vector
+set.seed(10)
+rnorm(8, 5, 2)
