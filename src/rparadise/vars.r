@@ -29,3 +29,11 @@ print(typeof(d))
 # Data frame - like a matrix
 M <- data.frame(n, int, d)
 ls.str(pat = "M")
+
+# The online help
+# R
+# ?lm # help about linear model
+
+# Read files
+data <- read.table("data.txt")
+data

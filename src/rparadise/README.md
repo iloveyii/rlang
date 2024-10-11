@@ -5,7 +5,7 @@
 
 ## Run
 
-- Copy file `cp src/rparadise/vars.r scripts/`
+- Copy file `cp src/rparadise/* scripts/`
 - SSH `docker exec -ti dat246_rlang /bin/bash`
 - Run cmd `Rscript vars.r` 
   
