@@ -37,3 +37,10 @@ ls.str(pat = "M")
 # Read files
 data <- read.table("data.txt")
 data
+
+# Read combined line witthout delimeter
+data2 <- read.fwf("datacombined.txt", widths=c(1, 4, 3))
+data2
+
+# Write data to file
+write.table(data2, "write.txt", append=FALSE, quote=FALSE, row.names = FALSE, col.names = FALSE)
