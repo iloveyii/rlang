@@ -8,13 +8,17 @@
 
 x <- rnorm(10, 300, 20)
 y <- rnorm(10, 3, 1)
-svg()
+# svg()
+png()
 layout(matrix(1:6, 3, 2))
 layout.show(6)
 
 plot(x, y)
 x
 y
+
+par(bg="yellow")
 pie(x)
 dotchart(y)
+barplot(x)
 
