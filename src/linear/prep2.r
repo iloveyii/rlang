@@ -3,13 +3,13 @@ library(rethinking)
 set.seed(2971)
 N <- 100
 a <- rnorm(N, 178, 20)
-b <- rnorm(N, 0, 10)
+b <- rlnorm(N, 0, 1)
 
 data(Howell1)
 d2 <- Howell1
 
 
-jpeg(file = "plot2.jpeg")
+jpeg(file = "prep2.jpeg")
 
 plot(NULL, xlim = range(d2$weight), ylim = c(-100, 400), xlab = "weight", ylab = "height") # nolint
 abline(h = 0, lty = 2)

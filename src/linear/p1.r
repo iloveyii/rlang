@@ -12,7 +12,7 @@ data(Howell1)
 d2 <- Howell1
 N <- 100
 
-jpeg(file = "plot2.jpeg")
+jpeg(file = "plot1.jpeg")
 
 # plot.new() # nolint: commented_code_linter.
 # Get data from R interactive shell

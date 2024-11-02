@@ -5,7 +5,7 @@ data(Howell1)
 d2 <- Howell1
 N <- 100
 
-jpeg(file = "height_weight.jpeg")
+jpeg(file = "prep.jpeg")
 
 plot(d2$height ~ d2$weight)
 
