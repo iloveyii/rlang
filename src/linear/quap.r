@@ -7,3 +7,4 @@ b <- rlnorm(N, 0, 1)
 
 data(Howell1)
 d2 <- Howell1
+d2

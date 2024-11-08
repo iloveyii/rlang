@@ -9,6 +9,7 @@ services:
       - 5015:5015
     volumes:
       - ./scripts:/app/scripts:rw
+      - ./src:/app/src:rw
     environment:
       TZ: "Europe/Stockholm"
     command: tail -F /dev/null
